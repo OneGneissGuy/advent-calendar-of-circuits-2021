@@ -1,0 +1,283 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+3.3V #PWR01
+U 1 1 61A8DDE7
+P 5750 3200
+F 0 "#PWR01" H 5750 3050 50  0001 C CNN
+F 1 "+3.3V" H 5765 3373 50  0000 C CNN
+F 2 "" H 5750 3200 50  0001 C CNN
+F 3 "" H 5750 3200 50  0001 C CNN
+	1    5750 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 61A8F1DD
+P 5750 4275
+F 0 "#PWR02" H 5750 4025 50  0001 C CNN
+F 1 "GND" H 5755 4102 50  0001 C CNN
+F 2 "" H 5750 4275 50  0001 C CNN
+F 3 "" H 5750 4275 50  0001 C CNN
+	1    5750 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 61A91625
+P 5900 3500
+F 0 "#PWR03" H 5900 3250 50  0001 C CNN
+F 1 "GND" H 5905 3327 50  0001 C CNN
+F 2 "" H 5900 3500 50  0001 C CNN
+F 3 "" H 5900 3500 50  0001 C CNN
+	1    5900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 61A91D0E
+P 5900 3400
+F 0 "C1" H 5992 3446 50  0000 L CNN
+F 1 "C_Small" H 5992 3355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5900 3400 50  0001 C CNN
+F 3 "~" H 5900 3400 50  0001 C CNN
+	1    5900 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3200 5750 3275
+Wire Wire Line
+	5750 3275 5900 3275
+Wire Wire Line
+	5900 3275 5900 3300
+Connection ~ 5750 3275
+Wire Wire Line
+	5750 3275 5750 3475
+Wire Wire Line
+	5850 4075 5850 4125
+Wire Wire Line
+	5750 4125 5750 4075
+Wire Wire Line
+	5750 4125 5750 4275
+Connection ~ 5750 4125
+NoConn ~ 5450 3975
+Wire Wire Line
+	5450 3875 5375 3875
+Wire Wire Line
+	5375 3875 5375 4125
+Wire Wire Line
+	5375 4125 5750 4125
+Wire Wire Line
+	5450 3575 4700 3575
+Wire Wire Line
+	4700 3575 4700 4275
+Wire Wire Line
+	5000 4275 5000 3675
+Wire Wire Line
+	5000 3675 5450 3675
+$Comp
+L power:GND #PWR07
+U 1 1 61AB0E31
+P 6950 3675
+F 0 "#PWR07" H 6950 3425 50  0001 C CNN
+F 1 "GND" H 6955 3502 50  0001 C CNN
+F 2 "" H 6950 3675 50  0001 C CNN
+F 3 "" H 6950 3675 50  0001 C CNN
+	1    6950 3675
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 3475 6850 3575
+Wire Wire Line
+	6850 3575 6950 3575
+$Comp
+L max4208:MAX4209HAUA U1
+U 1 1 61A87836
+P 5850 3775
+F 0 "U1" H 6025 3900 50  0000 L CNN
+F 1 "MAX4209HAUA" H 5175 4125 50  0000 L CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 5800 3325 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX4208-MAX4209.pdf" H 5850 3775 50  0001 C CNN
+	1    5850 3775
+	1    0    0    -1  
+$EndComp
+Text Notes 3900 3350 0    50   ~ 0
+VSENSE = 10A x 0.002 Ohm = 20mV\nPOWER IN RSENSE = 10A x 20mV = 200mW\nOUT = G x 20mV = 100 x 20mV = 2V
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 61A8D521
+P 7150 3675
+F 0 "J2" H 7230 3667 50  0000 L CNN
+F 1 "Conn_01x04" H 7230 3576 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 7150 3675 50  0001 C CNN
+F 3 "~" H 7150 3675 50  0001 C CNN
+	1    7150 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 61ABE308
+P 5600 4725
+F 0 "J1" H 5680 4717 50  0000 L CNN
+F 1 "Conn_01x04" H 5680 4626 50  0000 L CNN
+F 2 "TerminalBlock_4Ucon:TerminalBlock_4Ucon_1x04_P3.50mm_Horizontal" H 5600 4725 50  0001 C CNN
+F 3 "~" H 5600 4725 50  0001 C CNN
+	1    5600 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 4275 5000 4275
+Wire Wire Line
+	5125 4275 5125 4625
+Wire Wire Line
+	4750 4275 4700 4275
+Wire Wire Line
+	4600 4275 4600 4925
+$Comp
+L power:+3.3V #PWR05
+U 1 1 61AB0A72
+P 6850 3475
+F 0 "#PWR05" H 6850 3325 50  0001 C CNN
+F 1 "+3.3V" H 6865 3648 50  0000 C CNN
+F 2 "" H 6850 3475 50  0001 C CNN
+F 3 "" H 6850 3475 50  0001 C CNN
+	1    6850 3475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6625 3775 6950 3775
+$Comp
+L power:GND #PWR06
+U 1 1 61ACB26A
+P 6875 4275
+F 0 "#PWR06" H 6875 4025 50  0001 C CNN
+F 1 "GND" H 6880 4102 50  0001 C CNN
+F 2 "" H 6875 4275 50  0001 C CNN
+F 3 "" H 6875 4275 50  0001 C CNN
+	1    6875 4275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3875 6875 3875
+Wire Wire Line
+	6875 3875 6875 4275
+$Comp
+L Device:R_Small R1
+U 1 1 61AD4AB4
+P 4850 4275
+F 0 "R1" V 4654 4275 50  0000 C CNN
+F 1 "0.002R" V 4745 4275 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 4850 4275 50  0001 C CNN
+F 3 "~" H 4850 4275 50  0001 C CNN
+	1    4850 4275
+	0    1    1    0   
+$EndComp
+Connection ~ 5000 4275
+Wire Wire Line
+	5000 4275 5125 4275
+Connection ~ 4700 4275
+Wire Wire Line
+	4700 4275 4600 4275
+Text Label 5125 4625 0    50   ~ 0
+LOAD+
+Text Label 5125 4725 0    50   ~ 0
+LOAD-
+Wire Wire Line
+	5100 4725 5400 4725
+Wire Wire Line
+	5125 4625 5400 4625
+Wire Wire Line
+	4600 4925 5400 4925
+$Comp
+L Device:C_Small C2
+U 1 1 61AF9C54
+P 6350 3925
+F 0 "C2" H 6442 3971 50  0000 L CNN
+F 1 "1uF" H 6442 3880 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6350 3925 50  0001 C CNN
+F 3 "~" H 6350 3925 50  0001 C CNN
+	1    6350 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 61AFAEA8
+P 6525 3775
+F 0 "R2" V 6329 3775 50  0000 C CNN
+F 1 "100R" V 6420 3775 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6525 3775 50  0001 C CNN
+F 3 "~" H 6525 3775 50  0001 C CNN
+	1    6525 3775
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6350 4025 6350 4125
+Wire Wire Line
+	5750 4125 5850 4125
+Connection ~ 5850 4125
+Wire Wire Line
+	5850 4125 6350 4125
+Text Label 5075 4925 0    50   ~ 0
+SUPPLY+
+Text Label 5075 4825 0    50   ~ 0
+SUPPLY-
+$Comp
+L Jumper:Jumper_2_Open JP1
+U 1 1 61B074D1
+P 4900 4725
+F 0 "JP1" H 4900 4960 50  0000 C CNN
+F 1 "Jmpr_2_Opn" H 4850 4850 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4900 4725 50  0001 C CNN
+F 3 "~" H 4900 4725 50  0001 C CNN
+	1    4900 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4675 4825 4675 4725
+Wire Wire Line
+	4675 4725 4700 4725
+Wire Wire Line
+	4675 4825 5400 4825
+Wire Wire Line
+	6250 3775 6350 3775
+Wire Wire Line
+	6350 3775 6350 3825
+Connection ~ 6350 3775
+Wire Wire Line
+	6350 3775 6425 3775
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61B1347B
+P 6625 4850
+F 0 "H1" H 6725 4896 50  0000 L CNN
+F 1 "MountingHole" H 6725 4805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6625 4850 50  0001 C CNN
+F 3 "~" H 6625 4850 50  0001 C CNN
+	1    6625 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 61B14D6F
+P 6625 4625
+F 0 "H2" H 6725 4671 50  0000 L CNN
+F 1 "MountingHole" H 6725 4580 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6625 4625 50  0001 C CNN
+F 3 "~" H 6625 4625 50  0001 C CNN
+	1    6625 4625
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

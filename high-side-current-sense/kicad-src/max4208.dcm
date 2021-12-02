@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MAX4208AUA
+D Ultra-Low Offset/Drift, Low-Noise, Precision Amplifiers, Instrumentation Amplifiers with REF Buffer, MSOP-8
+K Instrumentation amplifier
+F https://datasheets.maximintegrated.com/en/ds/MAX4208-MAX4209.pdf
+$ENDCMP
+#
+$CMP MAX4209HAUA
+D Ultra-Low Offset/Drift, Low-Noise, Precision Amplifiers, Instrumentation Amplifiers with REF Buffer, fixed 100V/V gain, MSOP-8
+K Instrumentation amplifier
+F https://datasheets.maximintegrated.com/en/ds/MAX4208-MAX4209.pdf
+$ENDCMP
+#
+#End Doc Library

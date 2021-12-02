@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ad620)(type Legacy)(uri /home/jf/Documents/KiCAD/advent-calendar-of-circuits-2021/low-side-current-sense/ad620.lib)(options "")(descr ""))
+  (lib (name max4208)(type Legacy)(uri ${KIPRJMOD}/max4208.lib)(options "")(descr ""))
+)

@@ -1,0 +1,438 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+3.3V #PWR01
+U 1 1 61A8DDE7
+P 4850 3075
+F 0 "#PWR01" H 4850 2925 50  0001 C CNN
+F 1 "+3.3V" H 4975 3150 50  0000 C CNN
+F 2 "" H 4850 3075 50  0001 C CNN
+F 3 "" H 4850 3075 50  0001 C CNN
+	1    4850 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 61AFAEA8
+P 5975 3400
+F 0 "R2" V 5900 3400 50  0000 C CNN
+F 1 "100R" V 6050 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5975 3400 50  0001 C CNN
+F 3 "~" H 5975 3400 50  0001 C CNN
+	1    5975 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61B1347B
+P 6950 3450
+F 0 "H1" H 7050 3496 50  0000 L CNN
+F 1 "MountingHole" H 7050 3405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6950 3450 50  0001 C CNN
+F 3 "~" H 6950 3450 50  0001 C CNN
+	1    6950 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 61B14D6F
+P 6950 3225
+F 0 "H2" H 7050 3271 50  0000 L CNN
+F 1 "MountingHole" H 7050 3180 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6950 3225 50  0001 C CNN
+F 3 "~" H 6950 3225 50  0001 C CNN
+	1    6950 3225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 61A9D282
+P 5975 3100
+F 0 "C3" H 6050 3050 50  0000 L CNN
+F 1 "10nF" H 6050 3125 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5975 3100 50  0001 C CNN
+F 3 "~" H 5975 3100 50  0001 C CNN
+	1    5975 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL071 U1
+U 1 1 61AA1B8E
+P 4725 2775
+F 0 "U1" H 4850 2675 50  0000 L CNN
+F 1 "TL071" H 4825 2875 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 4775 2825 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4875 2925 50  0001 C CNN
+	1    4725 2775
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL071 U2
+U 1 1 61AA2ED4
+P 6450 2675
+F 0 "U2" H 6575 2600 50  0000 L CNN
+F 1 "TL071" H 6525 2800 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 6500 2725 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6600 2825 50  0001 C CNN
+	1    6450 2675
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 61AAEDF8
+P 4775 2200
+F 0 "RV1" V 4875 2100 50  0000 C CNN
+F 1 "100K" V 4775 2200 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3266W_Vertical" H 4775 2200 50  0001 C CNN
+F 3 "~" H 4775 2200 50  0001 C CNN
+	1    4775 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 61AAF775
+P 6525 2175
+F 0 "RV2" V 6650 2100 50  0000 C CNN
+F 1 "100K" V 6525 2175 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3266W_Vertical" H 6525 2175 50  0001 C CNN
+F 3 "~" H 6525 2175 50  0001 C CNN
+	1    6525 2175
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D1
+U 1 1 61AB365B
+P 5125 2450
+F 0 "D1" V 5171 2370 50  0000 R CNN
+F 1 "1N4148" V 5080 2370 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 5125 2275 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5125 2450 50  0001 C CNN
+	1    5125 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 61ABA409
+P 6100 3100
+F 0 "SW1" V 6175 3200 50  0000 L CNN
+F 1 "SW_Push" V 6250 3200 50  0000 L CNN
+F 2 "Button_Switch_SMD:SW_SPST_EVPBF" H 6100 3300 50  0001 C CNN
+F 3 "~" H 6100 3300 50  0001 C CNN
+	1    6100 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 61ABCB93
+P 5775 2200
+F 0 "R3" V 5700 2200 50  0000 C CNN
+F 1 "10K" V 5775 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5775 2200 50  0001 C CNN
+F 3 "~" H 5775 2200 50  0001 C CNN
+	1    5775 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 61AC9460
+P 5775 2375
+F 0 "R4" V 5700 2375 50  0000 C CNN
+F 1 "10K" V 5775 2375 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5775 2375 50  0001 C CNN
+F 3 "~" H 5775 2375 50  0001 C CNN
+	1    5775 2375
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 61B145D9
+P 4350 3075
+F 0 "R1" V 4154 3075 50  0000 C CNN
+F 1 "10K" V 4245 3075 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4350 3075 50  0001 C CNN
+F 3 "~" H 4350 3075 50  0001 C CNN
+	1    4350 3075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 3075 4625 3125
+Wire Wire Line
+	4625 3125 4850 3125
+Wire Wire Line
+	4850 3125 4850 3075
+Wire Wire Line
+	4425 2875 4350 2875
+Wire Wire Line
+	4350 2875 4350 2975
+Wire Wire Line
+	5675 2200 5125 2200
+Wire Wire Line
+	5125 2200 5125 2300
+Wire Wire Line
+	5025 2775 5125 2775
+Wire Wire Line
+	5525 2775 5575 2775
+Wire Wire Line
+	5675 2375 5575 2375
+Wire Wire Line
+	5575 2375 5575 2775
+Connection ~ 5575 2775
+Wire Wire Line
+	5575 2775 5625 2775
+Wire Wire Line
+	5925 2775 5975 2775
+Wire Wire Line
+	6150 2575 6050 2575
+Wire Wire Line
+	6050 2575 6050 2375
+Wire Wire Line
+	6050 1875 6825 1875
+Wire Wire Line
+	6825 1875 6825 2675
+Wire Wire Line
+	6825 2675 6750 2675
+Wire Wire Line
+	5125 2600 5125 2775
+Connection ~ 5125 2775
+Wire Wire Line
+	5125 2775 5225 2775
+Wire Wire Line
+	5875 2200 6050 2200
+Connection ~ 6050 2200
+Wire Wire Line
+	6050 2200 6050 1875
+Wire Wire Line
+	5875 2375 6050 2375
+Connection ~ 6050 2375
+Wire Wire Line
+	6050 2375 6050 2200
+Wire Wire Line
+	5975 2775 5975 3000
+Connection ~ 5975 2775
+Wire Wire Line
+	5975 2775 6100 2775
+Wire Wire Line
+	6100 2775 6100 2900
+Connection ~ 6100 2775
+Wire Wire Line
+	6100 2775 6150 2775
+Wire Wire Line
+	5975 3200 5975 3300
+Wire Wire Line
+	4925 2200 4975 2200
+Wire Wire Line
+	4975 2200 4975 2475
+Wire Wire Line
+	4975 2475 4825 2475
+Wire Wire Line
+	4625 2200 4575 2200
+Wire Wire Line
+	4575 2200 4575 2300
+Wire Wire Line
+	4575 2300 4725 2300
+Wire Wire Line
+	4725 2300 4725 2475
+Wire Wire Line
+	6375 2175 6325 2175
+Wire Wire Line
+	6325 2175 6325 2275
+Wire Wire Line
+	6325 2275 6450 2275
+Wire Wire Line
+	6450 2275 6450 2375
+Wire Wire Line
+	6675 2175 6725 2175
+Wire Wire Line
+	6725 2175 6725 2375
+Wire Wire Line
+	6550 2375 6725 2375
+$Comp
+L power:+3.3V #PWR04
+U 1 1 61B32265
+P 4775 2050
+F 0 "#PWR04" H 4775 1900 50  0001 C CNN
+F 1 "+3.3V" H 4790 2223 50  0000 C CNN
+F 2 "" H 4775 2050 50  0001 C CNN
+F 3 "" H 4775 2050 50  0001 C CNN
+	1    4775 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR010
+U 1 1 61B351F6
+P 6525 2025
+F 0 "#PWR010" H 6525 1875 50  0001 C CNN
+F 1 "+3.3V" H 6350 2100 50  0000 C CNN
+F 2 "" H 6525 2025 50  0001 C CNN
+F 3 "" H 6525 2025 50  0001 C CNN
+	1    6525 2025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 61B3782C
+P 4500 2425
+F 0 "#PWR03" H 4500 2175 50  0001 C CNN
+F 1 "GND" H 4505 2252 50  0001 C CNN
+F 2 "" H 4500 2425 50  0001 C CNN
+F 3 "" H 4500 2425 50  0001 C CNN
+	1    4500 2425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 2375 4500 2375
+Wire Wire Line
+	4500 2375 4500 2425
+Wire Wire Line
+	4625 2375 4625 2475
+$Comp
+L power:GND #PWR02
+U 1 1 61B4202D
+P 4350 3175
+F 0 "#PWR02" H 4350 2925 50  0001 C CNN
+F 1 "GND" H 4355 3002 50  0001 C CNN
+F 2 "" H 4350 3175 50  0001 C CNN
+F 3 "" H 4350 3175 50  0001 C CNN
+	1    4350 3175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 61B4236F
+P 5975 3550
+F 0 "#PWR06" H 5975 3300 50  0001 C CNN
+F 1 "GND" H 5980 3377 50  0001 C CNN
+F 2 "" H 5975 3550 50  0001 C CNN
+F 3 "" H 5975 3550 50  0001 C CNN
+	1    5975 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3300 6100 3525
+Wire Wire Line
+	6100 3525 5975 3525
+Wire Wire Line
+	5975 3525 5975 3500
+Wire Wire Line
+	5975 3525 5975 3550
+Connection ~ 5975 3525
+$Comp
+L power:+3.3V #PWR09
+U 1 1 61B52137
+P 6500 3000
+F 0 "#PWR09" H 6500 2850 50  0001 C CNN
+F 1 "+3.3V" H 6625 3075 50  0000 C CNN
+F 2 "" H 6500 3000 50  0001 C CNN
+F 3 "" H 6500 3000 50  0001 C CNN
+	1    6500 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 61B525B4
+P 6175 2375
+F 0 "#PWR08" H 6175 2125 50  0001 C CNN
+F 1 "GND" H 6180 2202 50  0001 C CNN
+F 2 "" H 6175 2375 50  0001 C CNN
+F 3 "" H 6175 2375 50  0001 C CNN
+	1    6175 2375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2375 6350 2325
+Wire Wire Line
+	6350 2325 6175 2325
+Wire Wire Line
+	6175 2325 6175 2375
+Wire Wire Line
+	6350 2975 6350 3025
+Wire Wire Line
+	6350 3025 6500 3025
+Wire Wire Line
+	6500 3025 6500 3000
+$Comp
+L power:+3.3V #PWR05
+U 1 1 61AB0A72
+P 7125 2375
+F 0 "#PWR05" H 7125 2225 50  0001 C CNN
+F 1 "+3.3V" H 7140 2548 50  0000 C CNN
+F 2 "" H 7125 2375 50  0001 C CNN
+F 3 "" H 7125 2375 50  0001 C CNN
+	1    7125 2375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7125 2375 7125 2475
+$Comp
+L power:GND #PWR07
+U 1 1 61AB0E31
+P 7225 2575
+F 0 "#PWR07" H 7225 2325 50  0001 C CNN
+F 1 "GND" H 7230 2402 50  0001 C CNN
+F 2 "" H 7225 2575 50  0001 C CNN
+F 3 "" H 7225 2575 50  0001 C CNN
+	1    7225 2575
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7225 2775 7000 2775
+Wire Wire Line
+	7125 2475 7225 2475
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 61A8D521
+P 7425 2575
+F 0 "J2" H 7505 2567 50  0000 L CNN
+F 1 "Conn_01x04" H 7505 2476 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 7425 2575 50  0001 C CNN
+F 3 "~" H 7425 2575 50  0001 C CNN
+	1    7425 2575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6825 2675 7225 2675
+Connection ~ 6825 2675
+Wire Wire Line
+	4425 2675 4225 2675
+Text Label 4225 2675 0    50   ~ 0
+Vin
+Text Label 7000 2675 0    50   ~ 0
+Vout
+Text Label 7000 2775 0    50   ~ 0
+Vin
+$Comp
+L Diode:1N4148 D2
+U 1 1 61BA2EBD
+P 5375 2775
+F 0 "D2" H 5375 2675 50  0000 C CNN
+F 1 "1N4148" H 5375 2900 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 5375 2600 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5375 2775 50  0001 C CNN
+	1    5375 2775
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N4148 D3
+U 1 1 61BA3E39
+P 5775 2775
+F 0 "D3" H 5775 2675 50  0000 C CNN
+F 1 "1N4148" H 5800 2900 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 5775 2600 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 5775 2775 50  0001 C CNN
+	1    5775 2775
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

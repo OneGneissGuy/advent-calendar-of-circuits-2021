@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AD8551R
+D Zero-Drift, Single-Supply, Rail-to-Rail Input/Output Operational Amplifiers, SOIC-8
+F https://www.analog.com/media/en/technical-documentation/data-sheets/AD8551_8552_8554.pdf
+$ENDCMP
+#
+$CMP AD8551RM
+D Zero-Drift, Single-Supply, Rail-to-Rail Input/Output Operational Amplifiers, MSOP-8
+F https://www.analog.com/media/en/technical-documentation/data-sheets/AD8551_8552_8554.pdf
+$ENDCMP
+#
+#End Doc Library

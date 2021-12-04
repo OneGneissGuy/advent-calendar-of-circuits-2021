@@ -442,14 +442,16 @@ Wire Wire Line
 Wire Wire Line
 	5600 1900 5600 1700
 $Comp
-L Reference_Voltage:ADR425ARMZ U?
+L Reference_Voltage:ADR425ARMZ U1
 U 1 1 61BD40D0
 P 4175 2300
-F 0 "U?" H 3932 2346 50  0000 R CNN
+F 0 "U1" H 3932 2346 50  0000 R CNN
 F 1 "ADR425ARMZ" H 3932 2255 50  0000 R CNN
 F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 4175 1800 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/adr420_421_423_425.pdf" H 4175 2450 50  0001 C CNN
 	1    4175 2300
 	1    0    0    -1  
 $EndComp
+Text Notes 6500 3375 0    50   ~ 0
+5 mVout/C
 $EndSCHEMATC

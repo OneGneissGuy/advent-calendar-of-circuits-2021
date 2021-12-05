@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,5.1.6-c6e7f7d~87~ubuntu18.04.1*%
-%TF.CreationDate,2021-12-05T00:18:48-08:00*%
+%TF.CreationDate,2021-12-05T00:26:55-08:00*%
 %TF.ProjectId,op-amp-low-side-current-sense,6f702d61-6d70-42d6-9c6f-772d73696465,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Paste,Top*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 5.1.6-c6e7f7d~87~ubuntu18.04.1) date 2021-12-05 00:18:48*
+G04 Created by KiCad (PCBNEW 5.1.6-c6e7f7d~87~ubuntu18.04.1) date 2021-12-05 00:26:55*
 %MOMM*%
 %LPD*%
 G01*
@@ -363,7 +363,7 @@ X166558000Y-98454500D03*
 X164658000Y-98454500D03*
 X165608000Y-100554500D03*
 %TD*%
-%TO.C,C4*%
+%TO.C,C1*%
 G36*
 G01*
 X157355250Y-96995500D02*

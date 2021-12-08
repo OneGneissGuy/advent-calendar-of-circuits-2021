@@ -262,10 +262,10 @@ F 3 "" H 6900 2875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Sensor_Optical:BPX61 D?
+L Sensor_Optical:BPX61 D1
 U 1 1 61B6A38B
 P 5325 2575
-F 0 "D?" V 5321 2497 50  0000 R CNN
+F 0 "D1" V 5321 2497 50  0000 R CNN
 F 1 "BPX61" V 5230 2497 50  0000 R CNN
 F 2 "Package_TO_SOT_THT:TO-5-2_Window" H 5325 2750 50  0001 C CNN
 F 3 "http://www.osram-os.com/Graphics/XPic3/00101650_0.pdf" H 5275 2575 50  0001 C CNN

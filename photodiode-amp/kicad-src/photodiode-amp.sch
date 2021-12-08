@@ -1,0 +1,275 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_Small R2
+U 1 1 61AFAEA8
+P 5975 3100
+F 0 "R2" V 5900 3100 50  0000 C CNN
+F 1 "100R" V 6050 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5975 3100 50  0001 C CNN
+F 3 "~" H 5975 3100 50  0001 C CNN
+	1    5975 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61B1347B
+P 6750 3675
+F 0 "H1" H 6850 3721 50  0000 L CNN
+F 1 "MountingHole" H 6850 3630 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6750 3675 50  0001 C CNN
+F 3 "~" H 6750 3675 50  0001 C CNN
+	1    6750 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 61B14D6F
+P 6750 3450
+F 0 "H2" H 6850 3496 50  0000 L CNN
+F 1 "MountingHole" H 6850 3405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6750 3450 50  0001 C CNN
+F 3 "~" H 6750 3450 50  0001 C CNN
+	1    6750 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5975 3200 5975 3250
+$Comp
+L power:GND #PWR06
+U 1 1 61B4236F
+P 5975 3300
+F 0 "#PWR06" H 5975 3050 50  0001 C CNN
+F 1 "GND" H 5980 3127 50  0001 C CNN
+F 2 "" H 5975 3300 50  0001 C CNN
+F 3 "" H 5975 3300 50  0001 C CNN
+	1    5975 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2875 6900 2975
+$Comp
+L power:GND #PWR07
+U 1 1 61AB0E31
+P 7000 3075
+F 0 "#PWR07" H 7000 2825 50  0001 C CNN
+F 1 "GND" H 7005 2902 50  0001 C CNN
+F 2 "" H 7000 3075 50  0001 C CNN
+F 3 "" H 7000 3075 50  0001 C CNN
+	1    7000 3075
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 3275 6775 3275
+Wire Wire Line
+	6900 2975 7000 2975
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 61A8D521
+P 7200 3075
+F 0 "J2" H 7280 3067 50  0000 L CNN
+F 1 "Conn_01x04" H 7280 2976 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 7200 3075 50  0001 C CNN
+F 3 "~" H 7200 3075 50  0001 C CNN
+	1    7200 3075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6775 3175 7000 3175
+Text Label 6775 3275 0    50   ~ 0
+Vout
+Text Label 6775 3175 0    50   ~ 0
+Vref
+Wire Wire Line
+	6125 2850 6125 2825
+Wire Wire Line
+	5975 2850 6125 2850
+Wire Wire Line
+	5975 2800 5975 2850
+$Comp
+L Device:C_Small C3
+U 1 1 61A9D282
+P 5725 3100
+F 0 "C3" H 5800 3050 50  0000 L CNN
+F 1 "10nF" H 5800 3125 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5725 3100 50  0001 C CNN
+F 3 "~" H 5725 3100 50  0001 C CNN
+	1    5725 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:OPA333xxDBV U1
+U 1 1 61B13F66
+P 6075 2500
+F 0 "U1" H 6075 2500 50  0000 C CNN
+F 1 "OPA333xxDBV" H 6325 2375 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5975 2300 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa333.pdf" H 6075 2700 50  0001 C CNN
+	1    6075 2500
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 61B2103D
+P 5850 2925
+F 0 "R1" V 5775 2925 50  0000 C CNN
+F 1 "100R" V 5925 2925 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5850 2925 50  0001 C CNN
+F 3 "~" H 5850 2925 50  0001 C CNN
+	1    5850 2925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 61B23471
+P 6125 1900
+F 0 "C1" H 6200 1850 50  0000 L CNN
+F 1 "3.3pF" H 6200 1925 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6125 1900 50  0001 C CNN
+F 3 "~" H 6125 1900 50  0001 C CNN
+	1    6125 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 61B26224
+P 6100 2200
+F 0 "#PWR0101" H 6100 1950 50  0001 C CNN
+F 1 "GND" H 6105 2027 50  0001 C CNN
+F 2 "" H 6100 2200 50  0001 C CNN
+F 3 "" H 6100 2200 50  0001 C CNN
+	1    6100 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2200 6100 2075
+Wire Wire Line
+	6100 2075 5975 2075
+Wire Wire Line
+	5975 2075 5975 2200
+$Comp
+L Device:R_Small R3
+U 1 1 61B275EE
+P 6125 2025
+F 0 "R3" V 6025 1950 50  0000 C CNN
+F 1 "1.2M" V 6175 1850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6125 2025 50  0001 C CNN
+F 3 "~" H 6125 2025 50  0001 C CNN
+	1    6125 2025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 61B2D465
+P 5325 2950
+F 0 "#PWR0102" H 5325 2700 50  0001 C CNN
+F 1 "GND" H 5330 2777 50  0001 C CNN
+F 2 "" H 5325 2950 50  0001 C CNN
+F 3 "" H 5325 2950 50  0001 C CNN
+	1    5325 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6375 2500 6650 2500
+Wire Wire Line
+	6650 2500 6650 2025
+Wire Wire Line
+	6650 2025 6225 2025
+Connection ~ 6650 2500
+Wire Wire Line
+	6025 2025 5700 2025
+Wire Wire Line
+	5700 2025 5700 2400
+Wire Wire Line
+	5700 2400 5775 2400
+Wire Wire Line
+	5700 2400 5325 2400
+Wire Wire Line
+	5325 2400 5325 2475
+Connection ~ 5700 2400
+Wire Wire Line
+	5975 2850 5975 2925
+Connection ~ 5975 2850
+Wire Wire Line
+	5950 2925 5975 2925
+Connection ~ 5975 2925
+Wire Wire Line
+	5975 2925 5975 3000
+Wire Wire Line
+	5750 2925 5725 2925
+Wire Wire Line
+	5725 2925 5725 3000
+Wire Wire Line
+	5725 3200 5725 3250
+Wire Wire Line
+	5725 3250 5975 3250
+Connection ~ 5975 3250
+Wire Wire Line
+	5975 3250 5975 3300
+Wire Wire Line
+	5325 2775 5325 2950
+Wire Wire Line
+	5775 2600 5625 2600
+Text Label 5625 2600 0    50   ~ 0
+Vref
+Wire Wire Line
+	6225 1900 6650 1900
+Wire Wire Line
+	6650 1900 6650 2025
+Connection ~ 6650 2025
+Wire Wire Line
+	6025 1900 5700 1900
+Wire Wire Line
+	5700 1900 5700 2025
+Connection ~ 5700 2025
+Text Label 6825 2500 2    50   ~ 0
+Vout
+Wire Wire Line
+	6650 2500 6825 2500
+$Comp
+L power:+5V #PWR0103
+U 1 1 61B45C91
+P 6125 2825
+F 0 "#PWR0103" H 6125 2675 50  0001 C CNN
+F 1 "+5V" H 6140 2998 50  0000 C CNN
+F 2 "" H 6125 2825 50  0001 C CNN
+F 3 "" H 6125 2825 50  0001 C CNN
+	1    6125 2825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 61B59238
+P 6900 2875
+F 0 "#PWR0104" H 6900 2725 50  0001 C CNN
+F 1 "+5V" H 6915 3048 50  0000 C CNN
+F 2 "" H 6900 2875 50  0001 C CNN
+F 3 "" H 6900 2875 50  0001 C CNN
+	1    6900 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor_Optical:BPX61 D?
+U 1 1 61B6A38B
+P 5325 2575
+F 0 "D?" V 5321 2497 50  0000 R CNN
+F 1 "BPX61" V 5230 2497 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-5-2_Window" H 5325 2750 50  0001 C CNN
+F 3 "http://www.osram-os.com/Graphics/XPic3/00101650_0.pdf" H 5275 2575 50  0001 C CNN
+	1    5325 2575
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC

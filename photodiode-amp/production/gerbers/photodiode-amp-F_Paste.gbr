@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,5.1.6-c6e7f7d~87~ubuntu18.04.1*%
-%TF.CreationDate,2021-12-07T16:29:37-08:00*%
+%TF.CreationDate,2021-12-07T16:35:33-08:00*%
 %TF.ProjectId,photodiode-amp,70686f74-6f64-4696-9f64-652d616d702e,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Paste,Top*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 5.1.6-c6e7f7d~87~ubuntu18.04.1) date 2021-12-07 16:29:37*
+G04 Created by KiCad (PCBNEW 5.1.6-c6e7f7d~87~ubuntu18.04.1) date 2021-12-07 16:35:33*
 %MOMM*%
 %LPD*%
 G01*
@@ -21,7 +21,7 @@ X150792000Y-100137000D03*
 X150792000Y-99187000D03*
 X150792000Y-98237000D03*
 %TD*%
-%TO.C,R3*%
+%TO.C,R1*%
 G36*
 G01*
 X151796000Y-101597750D02*
@@ -71,7 +71,7 @@ X153371000Y-101597750I0J-218750D01*
 G01*
 G37*
 %TD*%
-%TO.C,R1*%
+%TO.C,R2*%
 G36*
 G01*
 X152623000Y-96776250D02*
@@ -171,7 +171,7 @@ X153371000Y-103121750I0J-218750D01*
 G01*
 G37*
 %TD*%
-%TO.C,C3*%
+%TO.C,C2*%
 G36*
 G01*
 X149730750Y-96108000D02*
@@ -221,7 +221,7 @@ X149730750Y-94533000I218750J0D01*
 G01*
 G37*
 %TD*%
-%TO.C,R2*%
+%TO.C,R3*%
 G36*
 G01*
 X152623000Y-95252250D02*

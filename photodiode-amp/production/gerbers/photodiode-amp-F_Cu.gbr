@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,5.1.6-c6e7f7d~87~ubuntu18.04.1*%
-%TF.CreationDate,2021-12-07T16:29:37-08:00*%
+%TF.CreationDate,2021-12-07T16:35:33-08:00*%
 %TF.ProjectId,photodiode-amp,70686f74-6f64-4696-9f64-652d616d702e,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Copper,L1,Top*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 5.1.6-c6e7f7d~87~ubuntu18.04.1) date 2021-12-07 16:29:37*
+G04 Created by KiCad (PCBNEW 5.1.6-c6e7f7d~87~ubuntu18.04.1) date 2021-12-07 16:35:33*
 %MOMM*%
 %LPD*%
 G01*
@@ -68,7 +68,7 @@ X150792000Y-99187000D03*
 %TO.N,/Vout*%
 X150792000Y-98237000D03*
 %TD*%
-%TO.P,R3,2*%
+%TO.P,R1,2*%
 %TO.N,/Vout*%
 %TA.AperFunction,SMDPad,CuDef*%
 G36*
@@ -96,7 +96,7 @@ X151796000Y-101597750I0J-218750D01*
 G01*
 G37*
 %TD.AperFunction*%
-%TO.P,R3,1*%
+%TO.P,R1,1*%
 %TO.N,Net-(C1-Pad1)*%
 %TA.AperFunction,SMDPad,CuDef*%
 G36*
@@ -125,7 +125,7 @@ G01*
 G37*
 %TD.AperFunction*%
 %TD*%
-%TO.P,R1,2*%
+%TO.P,R2,2*%
 %TO.N,+5V*%
 %TA.AperFunction,SMDPad,CuDef*%
 G36*
@@ -153,8 +153,8 @@ X152623000Y-96776250I0J218750D01*
 G01*
 G37*
 %TD.AperFunction*%
-%TO.P,R1,1*%
-%TO.N,Net-(C3-Pad2)*%
+%TO.P,R2,1*%
+%TO.N,Net-(C2-Pad2)*%
 %TA.AperFunction,SMDPad,CuDef*%
 G36*
 G01*
@@ -239,8 +239,8 @@ G01*
 G37*
 %TD.AperFunction*%
 %TD*%
-%TO.P,C3,2*%
-%TO.N,Net-(C3-Pad2)*%
+%TO.P,C2,2*%
+%TO.N,Net-(C2-Pad2)*%
 %TA.AperFunction,SMDPad,CuDef*%
 G36*
 G01*
@@ -267,7 +267,7 @@ X149730750Y-96108000I218750J0D01*
 G01*
 G37*
 %TD.AperFunction*%
-%TO.P,C3,1*%
+%TO.P,C2,1*%
 %TO.N,GND*%
 %TA.AperFunction,SMDPad,CuDef*%
 G36*
@@ -296,7 +296,7 @@ G01*
 G37*
 %TD.AperFunction*%
 %TD*%
-%TO.P,R2,2*%
+%TO.P,R3,2*%
 %TO.N,+5V*%
 %TA.AperFunction,SMDPad,CuDef*%
 G36*
@@ -324,7 +324,7 @@ X152623000Y-95252250I0J218750D01*
 G01*
 G37*
 %TD.AperFunction*%
-%TO.P,R2,1*%
+%TO.P,R3,1*%
 %TO.N,GND*%
 %TA.AperFunction,SMDPad,CuDef*%
 G36*
@@ -407,7 +407,7 @@ X145034000Y-96901000D02*
 X147066000Y-96901000D01*
 X150792000Y-99187000D02*
 X149479000Y-99187000D01*
-%TO.N,Net-(C3-Pad2)*%
+%TO.N,Net-(C2-Pad2)*%
 X150012500Y-96520000D02*
 X149987000Y-96545500D01*
 X151485500Y-96520000D02*

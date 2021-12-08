@@ -1,0 +1,267 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61B1347B
+P 6875 3850
+F 0 "H1" H 6975 3896 50  0000 L CNN
+F 1 "MountingHole" H 6975 3805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6875 3850 50  0001 C CNN
+F 3 "~" H 6875 3850 50  0001 C CNN
+	1    6875 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 61B14D6F
+P 6875 3625
+F 0 "H2" H 6975 3671 50  0000 L CNN
+F 1 "MountingHole" H 6975 3580 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6875 3625 50  0001 C CNN
+F 3 "~" H 6875 3625 50  0001 C CNN
+	1    6875 3625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2875 6950 2975
+$Comp
+L power:GND #PWR07
+U 1 1 61AB0E31
+P 7050 3175
+F 0 "#PWR07" H 7050 2925 50  0001 C CNN
+F 1 "GND" H 7055 3002 50  0001 C CNN
+F 2 "" H 7050 3175 50  0001 C CNN
+F 3 "" H 7050 3175 50  0001 C CNN
+	1    7050 3175
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7050 3275 6825 3275
+Wire Wire Line
+	6950 2975 7050 2975
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 61A8D521
+P 7250 3075
+F 0 "J2" H 7330 3067 50  0000 L CNN
+F 1 "Conn_01x04" H 7330 2976 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 7250 3075 50  0001 C CNN
+F 3 "~" H 7250 3075 50  0001 C CNN
+	1    7250 3075
+	1    0    0    -1  
+$EndComp
+Text Label 6825 3275 0    50   ~ 0
+Vout
+$Comp
+L power:GND #PWR010
+U 1 1 61B6C07A
+P 5225 2825
+F 0 "#PWR010" H 5225 2575 50  0001 C CNN
+F 1 "GND" H 5230 2652 50  0001 C CNN
+F 2 "" H 5225 2825 50  0001 C CNN
+F 3 "" H 5225 2825 50  0001 C CNN
+	1    5225 2825
+	1    0    0    -1  
+$EndComp
+Text Label 6200 3375 0    50   ~ 0
+Vout
+Wire Wire Line
+	7050 3075 6775 3075
+Wire Wire Line
+	6775 3075 6775 2875
+$Comp
+L Amplifier_Operational:TL081 U1
+U 1 1 61B0F954
+P 5875 3375
+F 0 "U1" H 5850 3400 50  0000 L CNN
+F 1 "TL081" H 5875 3525 50  0000 L CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 5925 3425 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 6025 3525 50  0001 C CNN
+	1    5875 3375
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 61B1B7E0
+P 5700 2775
+F 0 "R2" V 5625 2775 50  0000 C CNN
+F 1 "10K" V 5775 2775 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5700 2775 50  0001 C CNN
+F 3 "~" H 5700 2775 50  0001 C CNN
+	1    5700 2775
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 61B0AB8F
+P 5400 2775
+F 0 "R1" V 5325 2775 50  0000 C CNN
+F 1 "10K" V 5475 2775 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5400 2775 50  0001 C CNN
+F 3 "~" H 5400 2775 50  0001 C CNN
+	1    5400 2775
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 5875 3075
+NoConn ~ 5975 3075
+$Comp
+L Device:C_Small C1
+U 1 1 61B277EC
+P 6425 3800
+F 0 "C1" H 6500 3750 50  0000 L CNN
+F 1 "10nF" H 6500 3825 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6425 3800 50  0001 C CNN
+F 3 "~" H 6425 3800 50  0001 C CNN
+	1    6425 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 61B399A6
+P 6425 3525
+F 0 "R3" V 6350 3525 50  0000 C CNN
+F 1 "10K" V 6500 3525 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6425 3525 50  0001 C CNN
+F 3 "~" H 6425 3525 50  0001 C CNN
+	1    6425 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 61B3A161
+P 6425 4250
+F 0 "#PWR03" H 6425 4000 50  0001 C CNN
+F 1 "GND" H 6430 4077 50  0001 C CNN
+F 2 "" H 6425 4250 50  0001 C CNN
+F 3 "" H 6425 4250 50  0001 C CNN
+	1    6425 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 61B3F9B1
+P 6625 4075
+F 0 "R4" V 6550 4075 50  0000 C CNN
+F 1 "10K" V 6700 4075 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6625 4075 50  0001 C CNN
+F 3 "~" H 6625 4075 50  0001 C CNN
+	1    6625 4075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 61B40E37
+P 6425 4075
+F 0 "C2" H 6500 4025 50  0000 L CNN
+F 1 "10nF" H 6500 4100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6425 4075 50  0001 C CNN
+F 3 "~" H 6425 4075 50  0001 C CNN
+	1    6425 4075
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+9V #PWR02
+U 1 1 61B45C7C
+P 5775 3675
+F 0 "#PWR02" H 5775 3525 50  0001 C CNN
+F 1 "+9V" H 5790 3848 50  0000 C CNN
+F 2 "" H 5775 3675 50  0001 C CNN
+F 3 "" H 5775 3675 50  0001 C CNN
+	1    5775 3675
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:-9V #PWR01
+U 1 1 61B4770D
+P 5775 3075
+F 0 "#PWR01" H 5775 2950 50  0001 C CNN
+F 1 "-9V" H 5790 3248 50  0000 C CNN
+F 2 "" H 5775 3075 50  0001 C CNN
+F 3 "" H 5775 3075 50  0001 C CNN
+	1    5775 3075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5575 3475 5550 3475
+Wire Wire Line
+	5550 3475 5550 3925
+Wire Wire Line
+	5550 3925 6425 3925
+Wire Wire Line
+	6425 3925 6425 3900
+Wire Wire Line
+	6425 3925 6425 3975
+Connection ~ 6425 3925
+Wire Wire Line
+	6425 3625 6425 3700
+Wire Wire Line
+	6425 3375 6425 3425
+Wire Wire Line
+	6175 3375 6425 3375
+Wire Wire Line
+	6625 3975 6625 3925
+Wire Wire Line
+	6425 3925 6625 3925
+Wire Wire Line
+	6425 4175 6425 4225
+Wire Wire Line
+	6425 4225 6625 4225
+Wire Wire Line
+	6625 4225 6625 4175
+Connection ~ 6425 4225
+Wire Wire Line
+	6425 4225 6425 4250
+Wire Wire Line
+	5800 2775 6425 2775
+Wire Wire Line
+	6425 2775 6425 3375
+Connection ~ 6425 3375
+Wire Wire Line
+	5600 2775 5550 2775
+Wire Wire Line
+	5550 2775 5550 3275
+Connection ~ 5550 2775
+Wire Wire Line
+	5550 2775 5500 2775
+Wire Wire Line
+	5550 3275 5575 3275
+Wire Wire Line
+	5300 2775 5225 2775
+Wire Wire Line
+	5225 2775 5225 2825
+$Comp
+L power:-9V #PWR04
+U 1 1 61B63A4F
+P 6950 2875
+F 0 "#PWR04" H 6950 2750 50  0001 C CNN
+F 1 "-9V" H 6965 3048 50  0000 C CNN
+F 2 "" H 6950 2875 50  0001 C CNN
+F 3 "" H 6950 2875 50  0001 C CNN
+	1    6950 2875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR05
+U 1 1 61B63EDA
+P 6775 2875
+F 0 "#PWR05" H 6775 2725 50  0001 C CNN
+F 1 "+9V" H 6790 3048 50  0000 C CNN
+F 2 "" H 6775 2875 50  0001 C CNN
+F 3 "" H 6775 2875 50  0001 C CNN
+	1    6775 2875
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

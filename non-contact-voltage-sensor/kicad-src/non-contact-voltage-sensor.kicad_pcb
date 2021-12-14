@@ -312,7 +312,7 @@
       (net 13 "Net-(D1-Pad2)"))
     (pad 1 smd rect (at -0.75 0 90) (size 0.8 0.8) (layers F.Cu F.Paste F.Mask)
       (net 6 /SP-))
-    (model ${KISYS3DMOD}/LED_SMD.3dshapes/LED_0603_1608Metric_Castellated.step
+    (model ${KISYS3DMOD}/Diode_SMD.3dshapes/D_0603_1608Metric.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -912,7 +912,7 @@
   (segment (start 152.3848 98.0288) (end 153.5852 98.0288) (width 0.25) (layer F.Cu) (net 15))
   (segment (start 151.638 97.282) (end 152.3848 98.0288) (width 0.25) (layer F.Cu) (net 15))
 
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 61A873FB) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 61B851A1) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -1074,7 +1074,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 61A873F8) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 61B8519E) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))

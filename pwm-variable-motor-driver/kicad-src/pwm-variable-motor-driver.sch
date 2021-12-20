@@ -1,0 +1,442 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 61B14D6F
+P 2400 3475
+F 0 "H1" H 2500 3521 50  0000 L CNN
+F 1 "MountingHole" H 2500 3430 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 2400 3475 50  0001 C CNN
+F 3 "~" H 2400 3475 50  0001 C CNN
+	1    2400 3475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3100 3500 3200
+Wire Wire Line
+	3600 3825 3375 3825
+Wire Wire Line
+	3500 3200 3600 3200
+Text Label 3375 3825 0    50   ~ 0
+M-
+$Comp
+L power:+12V #PWR01
+U 1 1 61BCB7D4
+P 3500 3100
+F 0 "#PWR01" H 3500 2950 50  0001 C CNN
+F 1 "+12V" H 3515 3273 50  0000 C CNN
+F 2 "" H 3500 3100 50  0001 C CNN
+F 3 "" H 3500 3100 50  0001 C CNN
+	1    3500 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 5075 6950 4375
+$Comp
+L power:+12V #PWR08
+U 1 1 61B41967
+P 6950 2925
+F 0 "#PWR08" H 6950 2775 50  0001 C CNN
+F 1 "+12V" H 6965 3098 50  0000 C CNN
+F 2 "" H 6950 2925 50  0001 C CNN
+F 3 "" H 6950 2925 50  0001 C CNN
+	1    6950 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 61B44716
+P 5575 3150
+F 0 "C2" H 5650 3100 50  0000 L CNN
+F 1 "100n" H 5650 3175 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5575 3150 50  0001 C CNN
+F 3 "~" H 5575 3150 50  0001 C CNN
+	1    5575 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 61B51699
+P 6950 5075
+F 0 "#PWR09" H 6950 4825 50  0001 C CNN
+F 1 "GND" H 6955 4902 50  0001 C CNN
+F 2 "" H 6950 5075 50  0001 C CNN
+F 3 "" H 6950 5075 50  0001 C CNN
+	1    6950 5075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3925 6625 3925
+$Comp
+L power:GND #PWR02
+U 1 1 61B60CA1
+P 3600 3300
+F 0 "#PWR02" H 3600 3050 50  0001 C CNN
+F 1 "GND" H 3605 3127 50  0001 C CNN
+F 2 "" H 3600 3300 50  0001 C CNN
+F 3 "" H 3600 3300 50  0001 C CNN
+	1    3600 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 61B274EA
+P 3800 3200
+F 0 "J1" H 3880 3192 50  0000 L CNN
+F 1 "Conn_01x02" H 3880 3101 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 3800 3200 50  0001 C CNN
+F 3 "~" H 3800 3200 50  0001 C CNN
+	1    3800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 61B27905
+P 3800 3825
+F 0 "J2" H 3880 3817 50  0000 L CNN
+F 1 "Conn_01x02" H 3880 3726 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 3800 3825 50  0001 C CNN
+F 3 "~" H 3800 3825 50  0001 C CNN
+	1    3800 3825
+	1    0    0    1   
+$EndComp
+$Comp
+L dk_Clock-Timing-Programmable-Timers-and-Oscillators:NE555DR U1
+U 1 1 61BEF71B
+P 5275 3625
+F 0 "U1" H 4975 3675 60  0000 C CNN
+F 1 "NE555DR" H 5525 3675 60  0000 C CNN
+F 2 "digikey-footprints:SOIC-8_W3.9mm" H 5475 3825 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fne555" H 5475 3925 60  0001 L CNN
+F 4 "296-6501-1-ND" H 5475 4025 60  0001 L CNN "Digi-Key_PN"
+F 5 "NE555DR" H 5475 4125 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 5475 4225 60  0001 L CNN "Category"
+F 7 "Clock/Timing - Programmable Timers and Oscillators" H 5475 4325 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fne555" H 5475 4425 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/NE555DR/296-6501-1-ND/372490" H 5475 4525 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC OSC SGL TIMER 100KHZ 8-SOIC" H 5475 4625 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 5475 4725 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5475 4825 60  0001 L CNN "Status"
+	1    5275 3625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Motor_DC M1
+U 1 1 61BF5F78
+P 6950 3225
+F 0 "M1" H 7108 3221 50  0000 L CNN
+F 1 "Motor_DC" H 7108 3130 50  0000 L CNN
+F 2 "" H 6950 3135 50  0001 C CNN
+F 3 "~" H 6950 3135 50  0001 C CNN
+	1    6950 3225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D3
+U 1 1 61BF68D8
+P 6750 3300
+F 0 "D3" V 6750 2975 50  0000 L CNN
+F 1 "D_Small" V 6825 2975 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 6750 3300 50  0001 C CNN
+F 3 "~" V 6750 3300 50  0001 C CNN
+	1    6750 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_TRIM 100K1
+U 1 1 61C001A0
+P 6025 4525
+F 0 "100K1" V 5950 4525 50  0000 C CNN
+F 1 "R_POT_TRIM" V 6125 4825 50  0000 C CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_3214J_Horizontal" H 6025 4525 50  0001 C CNN
+F 3 "~" H 6025 4525 50  0001 C CNN
+	1    6025 4525
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 61C0E60E
+P 6625 4125
+F 0 "R3" V 6550 4125 50  0000 C CNN
+F 1 "10K" V 6700 4125 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6625 4125 50  0001 C CNN
+F 3 "~" H 6625 4125 50  0001 C CNN
+	1    6625 4125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3525 6950 3575
+$Comp
+L Device:R_Small R2
+U 1 1 61AEDDC3
+P 6475 3925
+F 0 "R2" V 6400 3925 50  0000 C CNN
+F 1 "1K" V 6550 3925 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6475 3925 50  0001 C CNN
+F 3 "~" H 6475 3925 50  0001 C CNN
+	1    6475 3925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 61C77FB8
+P 6025 3650
+F 0 "R1" V 5950 3650 50  0000 C CNN
+F 1 "1K" V 6100 3650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6025 3650 50  0001 C CNN
+F 3 "~" H 6025 3650 50  0001 C CNN
+	1    6025 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 61C8368E
+P 6025 4875
+F 0 "C3" H 6100 4825 50  0000 L CNN
+F 1 "100n" H 6100 4900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6025 4875 50  0001 C CNN
+F 3 "~" H 6025 4875 50  0001 C CNN
+	1    6025 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 61C8516C
+P 4600 4325
+F 0 "C1" H 4425 4275 50  0000 L CNN
+F 1 "10n" H 4400 4350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4600 4325 50  0001 C CNN
+F 3 "~" H 4600 4325 50  0001 C CNN
+	1    4600 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR04
+U 1 1 61C85A17
+P 5275 2925
+F 0 "#PWR04" H 5275 2775 50  0001 C CNN
+F 1 "+12V" H 5290 3098 50  0000 C CNN
+F 2 "" H 5275 2925 50  0001 C CNN
+F 3 "" H 5275 2925 50  0001 C CNN
+	1    5275 2925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 61C86F7D
+P 5275 5075
+F 0 "#PWR05" H 5275 4825 50  0001 C CNN
+F 1 "GND" H 5280 4902 50  0001 C CNN
+F 2 "" H 5275 5075 50  0001 C CNN
+F 3 "" H 5275 5075 50  0001 C CNN
+	1    5275 5075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5775 3925 6375 3925
+Wire Wire Line
+	6750 3400 6750 3575
+Wire Wire Line
+	6750 3575 6950 3575
+Connection ~ 6950 3575
+Wire Wire Line
+	6950 3575 6950 3625
+$Comp
+L Device:D_Small D1
+U 1 1 61C8B4CF
+P 5850 4125
+F 0 "D1" V 5896 4055 50  0000 R CNN
+F 1 "D_Small" V 5805 4055 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" V 5850 4125 50  0001 C CNN
+F 3 "~" V 5850 4125 50  0001 C CNN
+	1    5850 4125
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Small D2
+U 1 1 61C8BB6E
+P 6200 4125
+F 0 "D2" V 6154 4195 50  0000 L CNN
+F 1 "D_Small" V 6245 4195 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 6200 4125 50  0001 C CNN
+F 3 "~" V 6200 4125 50  0001 C CNN
+	1    6200 4125
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5775 3825 5850 3825
+Wire Wire Line
+	6025 3825 6025 3750
+Wire Wire Line
+	5850 3825 5850 4025
+Connection ~ 5850 3825
+Wire Wire Line
+	5850 3825 6025 3825
+Wire Wire Line
+	6025 3825 6200 3825
+Wire Wire Line
+	6200 3825 6200 4025
+Connection ~ 6025 3825
+Wire Wire Line
+	5850 4225 5850 4525
+Wire Wire Line
+	5850 4525 5875 4525
+Wire Wire Line
+	6200 4225 6200 4525
+Wire Wire Line
+	6200 4525 6175 4525
+Wire Wire Line
+	6025 4675 6025 4725
+Wire Wire Line
+	6025 4975 6025 5000
+Wire Wire Line
+	6025 5000 5275 5000
+Wire Wire Line
+	5275 5000 5275 5075
+Wire Wire Line
+	5275 4225 5275 5000
+Connection ~ 5275 5000
+Wire Wire Line
+	4600 4025 4600 4225
+Wire Wire Line
+	4600 4425 4600 5000
+Wire Wire Line
+	4600 5000 5275 5000
+Wire Wire Line
+	5275 3525 5275 3400
+Wire Wire Line
+	4775 3725 4625 3725
+Wire Wire Line
+	4625 3725 4625 3400
+Wire Wire Line
+	4625 3400 5275 3400
+Connection ~ 5275 3400
+Wire Wire Line
+	5275 3400 5275 3000
+$Comp
+L power:GND #PWR06
+U 1 1 61CB17A4
+P 5575 3350
+F 0 "#PWR06" H 5575 3100 50  0001 C CNN
+F 1 "GND" H 5580 3177 50  0001 C CNN
+F 2 "" H 5575 3350 50  0001 C CNN
+F 3 "" H 5575 3350 50  0001 C CNN
+	1    5575 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 2925 6950 2975
+Wire Wire Line
+	6950 2975 6750 2975
+Wire Wire Line
+	6750 2975 6750 3200
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:AO3401A Q1
+U 1 1 61CB61E4
+P 6950 3825
+F 0 "Q1" H 7058 3878 60  0000 L CNN
+F 1 "AO3401A" H 7058 3772 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 7150 4025 60  0001 L CNN
+F 3 "http://aosmd.com/res/data_sheets/AO3401A.pdf" H 7150 4125 60  0001 L CNN
+F 4 "785-1001-1-ND" H 7150 4225 60  0001 L CNN "Digi-Key_PN"
+F 5 "AO3401A" H 7150 4325 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 7150 4425 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 7150 4525 60  0001 L CNN "Family"
+F 8 "http://aosmd.com/res/data_sheets/AO3401A.pdf" H 7150 4625 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/alpha-omega-semiconductor-inc/AO3401A/785-1001-1-ND/1855943" H 7150 4725 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET P-CH 30V 4A SOT23" H 7150 4825 60  0001 L CNN "Description"
+F 11 "Alpha & Omega Semiconductor Inc." H 7150 4925 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7150 5025 60  0001 L CNN "Status"
+	1    6950 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR07
+U 1 1 61CBD4D4
+P 6025 2900
+F 0 "#PWR07" H 6025 2750 50  0001 C CNN
+F 1 "+12V" H 6040 3073 50  0000 C CNN
+F 2 "" H 6025 2900 50  0001 C CNN
+F 3 "" H 6025 2900 50  0001 C CNN
+	1    6025 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6025 2900 6025 3550
+Connection ~ 6950 2975
+Wire Wire Line
+	6950 2975 6950 3025
+Wire Wire Line
+	5575 3050 5575 3000
+Wire Wire Line
+	5575 3000 5275 3000
+Connection ~ 5275 3000
+Wire Wire Line
+	5275 3000 5275 2925
+Wire Wire Line
+	5575 3250 5575 3350
+Wire Wire Line
+	6625 4225 6625 4375
+Wire Wire Line
+	6625 4375 6950 4375
+Connection ~ 6950 4375
+Wire Wire Line
+	6950 4375 6950 4025
+Wire Wire Line
+	6625 4025 6625 3925
+Connection ~ 6625 3925
+Wire Wire Line
+	6625 3925 6575 3925
+Wire Wire Line
+	4775 3825 4700 3825
+Wire Wire Line
+	4700 3825 4700 4725
+Wire Wire Line
+	4700 4725 6025 4725
+Connection ~ 6025 4725
+Wire Wire Line
+	6025 4725 6025 4775
+Wire Wire Line
+	4775 4025 4750 4025
+Wire Wire Line
+	4775 3925 4750 3925
+Wire Wire Line
+	4750 3925 4750 4025
+Connection ~ 4750 4025
+Wire Wire Line
+	4750 4025 4600 4025
+Wire Wire Line
+	6950 3575 7200 3575
+Text Label 7200 3575 2    50   ~ 0
+M-
+$Comp
+L power:+12V #PWR0101
+U 1 1 61D18237
+P 3500 3625
+F 0 "#PWR0101" H 3500 3475 50  0001 C CNN
+F 1 "+12V" H 3515 3798 50  0000 C CNN
+F 2 "" H 3500 3625 50  0001 C CNN
+F 3 "" H 3500 3625 50  0001 C CNN
+	1    3500 3625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3725 3500 3725
+Wire Wire Line
+	3500 3725 3500 3625
+Text Notes 3375 3725 0    50   ~ 0
+M+
+$EndSCHEMATC

@@ -1,0 +1,27 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ADR291GRZ
+D 2.50V Low Noise, Micropower, Precision Voltage Reference, SO-8
+K 2.5V voltage reference
+F https://www.analog.com/media/en/technical-documentation/data-sheets/adr420_421_423_425.pdf
+$ENDCMP
+#
+$CMP ADR292GRZ
+D 4.096V Low Noise, Micropower, Precision Voltage Reference, SO-8
+K 4.096V voltage reference
+F https://www.analog.com/media/en/technical-documentation/data-sheets/adr420_421_423_425.pdf
+$ENDCMP
+#
+$CMP ADR293ERZ
+D 5.0V Low Noise, Micropower, Precision Voltage Reference, SO-8
+K voltage reference Ultraprecision Low Noise low power
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADR293.pdf
+$ENDCMP
+#
+$CMP ADR293GRZ
+D 5.0V Low Noise, Micropower, Precision Voltage Reference, SO-8
+K 5.0V voltage reference
+F https://www.analog.com/media/en/technical-documentation/data-sheets/ADR293.pdf
+$ENDCMP
+#
+#End Doc Library

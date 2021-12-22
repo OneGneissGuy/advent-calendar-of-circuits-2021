@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ADR293xRUZ)(type Legacy)(uri ${KIPRJMOD}/ADR293xRUZ.lib)(options "")(descr ""))
+  (lib (name ADR293xRZ)(type Legacy)(uri ${KIPRJMOD}/ADR293xRZ.lib)(options "")(descr ""))
+)

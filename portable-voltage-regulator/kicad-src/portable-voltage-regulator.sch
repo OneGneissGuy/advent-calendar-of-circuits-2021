@@ -144,17 +144,6 @@ Wire Wire Line
 Wire Wire Line
 	4500 4175 4500 4225
 $Comp
-L Amplifier_Operational:OPA333xxD U2
-U 1 1 61C3F360
-P 5975 3875
-F 0 "U2" H 6000 3750 50  0000 L CNN
-F 1 "OPA333xxD" H 6000 4000 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5875 3675 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/opa333.pdf" H 6125 4025 50  0001 C CNN
-	1    5975 3875
-	1    0    0    1   
-$EndComp
-$Comp
 L power:+9V #PWR01
 U 1 1 61C43BEC
 P 4500 3250
@@ -346,5 +335,16 @@ F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 4800 5100 50 
 F 3 "~" H 4800 5100 50  0001 C CNN
 	1    4800 5100
 	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA188xxD U2
+U 1 1 61C34A1C
+P 5975 3875
+F 0 "U2" H 6000 3700 50  0000 C CNN
+F 1 "OPA188xxD" H 6175 4025 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5875 3675 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa188.pdf" H 6125 4025 50  0001 C CNN
+	1    5975 3875
+	1    0    0    1   
 $EndComp
 $EndSCHEMATC
